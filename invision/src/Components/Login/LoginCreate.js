@@ -19,29 +19,52 @@ export const LoginCreate = () => {
   }
 
   return (
-    <section className="signUp-wrap animeLeft grid-6">
-      <section className="mainTitle grid-8">Invision</section>
-      <h1 className="title grid-6">Getting Started</h1>
-      <form action="" onSubmit={handleSubmit} className="grid-6">
-        <Input label="Full Name" type="text" name="fullName" {...fullName} />
-        <Input
-          label="Users name or Email"
-          type="text"
-          name="username"
-          {...username}
-        />
-        <Input
-          label="Create Password"
-          type="password"
-          name="password"
-          {...password}
-        />
-        <Button>Sign Up</Button>
-      </form>
-      <a className="orLine">or</a>
-      <Link to="/login/" className="linkText">
-        Log in
-      </Link>{" "}
+    <section className="signUp-wrap animeLeft wrapCenter">
+      <div className="centerColumn">
+        <h1 className="title grid-6">Getting Started</h1>
+        <form action="" onSubmit={handleSubmit} className="grid-6">
+          <Input label="Full Name" type="text" name="fullName" {...fullName} />
+          <Input
+            label="Users name or Email"
+            type="text"
+            name="username"
+            {...username}
+          />
+          <Input
+            label="Create Password"
+            type="password"
+            name="password"
+            {...password}
+          />
+          <Button>Sign Up</Button>
+        </form>
+        <div className="centerRow grid-6 hr-wrap">
+          <>
+            <hr /> <a>Or</a> <hr />
+          </>
+        </div>
+        <Button type="google"> Sign up with Google </Button>
+        <div className="bottomText grid-5">
+          <section>
+            By signing up, you agree to &nbsp;<b>Invision</b>
+            <br></br>
+            {"\n"}{" "}
+            <Link to="/login/" className="linkText">
+              Terms of Conditions
+            </Link>{" "}
+            &nbsp;and&nbsp;{" "}
+            <Link to="/login/" className="linkText">
+              Privacy Policy
+            </Link>{" "}
+          </section>
+          <section>
+            Already on&nbsp;<b>Invision?</b>&nbsp;
+            <Link to="/login/" className="linkText">
+              Log in
+            </Link>{" "}
+          </section>
+        </div>
+      </div>
     </section>
   );
 };

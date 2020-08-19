@@ -18,30 +18,42 @@ export const LoginForm = () => {
   }
 
   return (
-    <section className="signIn-wrap animeLeft grid-6">
-      <section className="mainTitle">Invision</section>
-      <h1 className="title">Welcome to Invision</h1>
-      <form action="" onSubmit={handleSubmit}>
-        <Input
-          label="User name or Email"
-          type="text"
-          name="username"
-          {...username}
-        />
-        <Input label="Password" type="password" name="password" {...password} />
-        <a>Forgot password?</a>
-        <br />
-        <Button>Sign In</Button>
-      </form>
-      <a>or</a>
-      <div className="bottomText grid-6">
-        <section style={{ marginRight: "2px" }}>
-          New <b>Invision</b>?
-        </section>
-        <Link to="/login/create" className="linkText">
-          {" "}
-          Create Account
-        </Link>{" "}
+    <section className="signIn-wrap animeLeft wrapCenter">
+      {/* <section className="mainTitle grid-11">Invision</section> */}
+      <div className="centerColumn">
+        <h1 className="title grid-6">Welcome to Invision</h1>
+        <form action="" onSubmit={handleSubmit} className="grid-6">
+          <Input
+            label="User name or Email"
+            type="text"
+            name="username"
+            {...username}
+          />
+          <Input
+            label="Password"
+            type="password"
+            name="password"
+            {...password}
+          />
+          <a>Forgot password?</a>
+          <br />
+          <Button>Sign In</Button>
+        </form>
+        <div className="centerRow grid-6 hr-wrap">
+          <>
+            <hr /> <a>Or</a> <hr />
+          </>
+        </div>
+        <Button type="google"> Sign up with Google </Button>
+        <div className="bottomText grid-5">
+          <section style={{ display: "flex", alignItems: "center" }}>
+            New&nbsp;<b>Invision</b>?&nbsp;
+            <Link to="/login/create" className="linkText">
+              {" "}
+              Create Account
+            </Link>{" "}
+          </section>
+        </div>
       </div>
     </section>
   );

@@ -9,5 +9,11 @@
 
   a {
     @include type-1(14);
+    float: right;
+    cursor: pointer;
+  }
+
+  b {
+    font-weight: bold;
   }
 }

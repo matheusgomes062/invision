@@ -5,8 +5,9 @@ import LoginCreate from "./LoginCreate";
 
 export const Login = () => {
   return (
-    <div>
+    <div className="loginWrapper">
       {/* carrousel */}
+      <section className="mainTitle">Invision</section>
       <Routes>
         <Route path="/" element={<LoginForm />} />
         <Route path="create" element={<LoginCreate />} />
