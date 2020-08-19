@@ -18,7 +18,8 @@ export const LoginForm = () => {
   }
 
   return (
-    <section className="signIn-wrap">
+    <section className="signIn-wrap animeLeft grid-6">
+      <section className="mainTitle">Invision</section>
       <h1 className="title">Welcome to Invision</h1>
       <form action="" onSubmit={handleSubmit}>
         <Input
@@ -28,14 +29,20 @@ export const LoginForm = () => {
           {...username}
         />
         <Input label="Password" type="password" name="password" {...password} />
-        <a className="small">Forgot password?</a>
+        <a>Forgot password?</a>
+        <br />
         <Button>Sign In</Button>
       </form>
       <a>or</a>
-      <section>
-        New <b>Invision</b>?
-      </section>
-      <Link to="/login/create">Create Account</Link>{" "}
+      <div className="bottomText grid-6">
+        <section style={{ marginRight: "2px" }}>
+          New <b>Invision</b>?
+        </section>
+        <Link to="/login/create" className="linkText">
+          {" "}
+          Create Account
+        </Link>{" "}
+      </div>
     </section>
   );
 };

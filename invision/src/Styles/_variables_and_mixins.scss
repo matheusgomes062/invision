@@ -25,13 +25,13 @@ $font-3: "Lato";
     font-size: em(14);
     line-height: em(30, 14);
   }
-  @if $size == 16 {
-    font-size: em(16);
-    line-height: em(30, 16);
-  }
   @if $size == 30 {
     font-size: em(30);
-    line-height: em(30, 30);
+    line-height: em(30, 16);
+  }
+  @if $size == 35 {
+    font-size: em(35);
+    line-height: em(35, 16);
   }
 }
 

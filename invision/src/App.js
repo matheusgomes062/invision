@@ -9,9 +9,9 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        {/* <LeftStillSlider /> */}
+        <LeftStillSlider />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Login />} />
           <Route path="/login/*" element={<Login />} />
         </Routes>
       </BrowserRouter>

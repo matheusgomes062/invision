@@ -19,9 +19,10 @@ export const LoginCreate = () => {
   }
 
   return (
-    <section className="signUp-wrap">
-      <h1 className="title">Getting Started</h1>
-      <form action="" onSubmit={handleSubmit}>
+    <section className="signUp-wrap animeLeft grid-6">
+      <section className="mainTitle grid-8">Invision</section>
+      <h1 className="title grid-6">Getting Started</h1>
+      <form action="" onSubmit={handleSubmit} className="grid-6">
         <Input label="Full Name" type="text" name="fullName" {...fullName} />
         <Input
           label="Users name or Email"
@@ -35,14 +36,12 @@ export const LoginCreate = () => {
           name="password"
           {...password}
         />
-
         <Button>Sign Up</Button>
       </form>
-      <a>or</a>
-      <section>
-        New <b>Invision</b>?
-      </section>
-      <Link to="/login/">Log in</Link>{" "}
+      <a className="orLine">or</a>
+      <Link to="/login/" className="linkText">
+        Log in
+      </Link>{" "}
     </section>
   );
 };

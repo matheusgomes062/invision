@@ -6,6 +6,7 @@ import LoginCreate from "./LoginCreate";
 export const Login = () => {
   return (
     <div>
+      {/* carrousel */}
       <Routes>
         <Route path="/" element={<LoginForm />} />
         <Route path="create" element={<LoginCreate />} />

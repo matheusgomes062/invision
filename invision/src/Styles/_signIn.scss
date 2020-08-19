@@ -1,8 +1,13 @@
 .signIn-wrap {
+  float: right;
   h1,
   a,
   section {
     font-family: $font-1;
     color: $grey;
+  }
+
+  a {
+    @include type-1(14);
   }
 }
