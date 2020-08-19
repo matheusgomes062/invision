@@ -1,0 +1,64 @@
+// Colors
+$olive: #a9c5ba;
+$grey: #707070;
+$light-gray: #00000029;
+$white: #ffffff;
+$black: #000000;
+
+// Fonts
+@font-face {
+  font-family: "Muli";
+  src: local("Muli"), url("../Assets/fonts/Muli.ttf") format("truetype");
+}
+$font-1: "Muli";
+$font-2: "Avenir";
+$font-3: "Lato";
+
+// Default context = 16
+@function em($pixel, $context: 16) {
+  @return $pixel / $context + em;
+}
+
+@mixin type-1($size) {
+  font-family: $font-1;
+  @if $size == 14 {
+    font-size: em(14);
+    line-height: em(30, 14);
+  }
+  @if $size == 16 {
+    font-size: em(16);
+    line-height: em(30, 16);
+  }
+  @if $size == 30 {
+    font-size: em(30);
+    line-height: em(30, 30);
+  }
+}
+
+@mixin type-2($size) {
+  font-family: $font-2;
+  @if $size == 18 {
+    font-size: em(18);
+    line-height: em(30, 18);
+  } @else if $size == 24 {
+    font-size: em(24);
+    line-height: em(30, 24);
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+}

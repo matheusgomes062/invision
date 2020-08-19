@@ -1,0 +1,32 @@
+// @import "Styles/variables_and_mixins";
+
+.btn {
+  color: $white;
+  text-decoration: none;
+  background-color: $grey;
+  font-family: $font-1;
+  border-radius: 25px;
+  font-size: 1em;
+  width: 175px;
+  line-height: 40px;
+  &:hover,
+  &:focus {
+    outline: none;
+    @include box-shadow(
+      0px 5px 5px -5px rgba(0, 0, 0, 0.65),
+      0px 5px 5px -5px rgba(0, 0, 0, 0.65),
+      0px 5px 5px -5px rgba(0, 0, 0, 0.65)
+    );
+  }
+  &.disabled {
+    opacity: 0.5;
+    cursor: wait;
+  }
+}
+
+.wrap-button {
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  padding: 12px 60px;
+}

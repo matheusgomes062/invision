@@ -1,0 +1,4 @@
+.title {
+  @include type-1(30);
+  color: $grey;
+}
