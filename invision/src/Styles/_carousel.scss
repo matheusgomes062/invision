@@ -1,7 +1,19 @@
 .carouselWrapper {
   height: 100vh;
   justify-content: center;
-  display: flex;
-  flex-direction: column;
-  background-color: $olive;
+  padding: 7%;
+  @include d(l) {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: $olive;
+  }
+  @include d(m) {
+    display: flex;
+    flex-direction: column;
+    background-color: $olive;
+  }
+  @include d(s) {
+    display: none;
+  }
 }

@@ -22,7 +22,7 @@ export const LoginForm = () => {
       {/* <section className="mainTitle grid-11">Invision</section> */}
       <div className="centerColumn">
         <h1 className="title grid-6">Welcome to Invision</h1>
-        <form action="" onSubmit={handleSubmit} className="grid-6">
+        <form action="" onSubmit={handleSubmit} className="grid-5">
           <Input
             label="User name or Email"
             type="text"
@@ -39,7 +39,7 @@ export const LoginForm = () => {
           <br />
           <Button>Sign In</Button>
         </form>
-        <div className="centerRow grid-6 hr-wrap">
+        <div className="centerRow grid-5 hr-wrap">
           <>
             <hr /> <a>Or</a> <hr />
           </>

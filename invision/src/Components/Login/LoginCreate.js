@@ -22,7 +22,7 @@ export const LoginCreate = () => {
     <section className="signUp-wrap animeLeft wrapCenter">
       <div className="centerColumn">
         <h1 className="title grid-6">Getting Started</h1>
-        <form action="" onSubmit={handleSubmit} className="grid-6">
+        <form action="" onSubmit={handleSubmit} className="grid-5">
           <Input label="Full Name" type="text" name="fullName" {...fullName} />
           <Input
             label="Users name or Email"
@@ -38,7 +38,7 @@ export const LoginCreate = () => {
           />
           <Button>Sign Up</Button>
         </form>
-        <div className="centerRow grid-6 hr-wrap">
+        <div className="centerRow grid-5 hr-wrap">
           <>
             <hr /> <a>Or</a> <hr />
           </>

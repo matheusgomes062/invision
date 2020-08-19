@@ -12,7 +12,6 @@ const LeftStillSlider = () => {
       infiniteLoop
       showThumbs={false}
       showStatus={false}
-      width="700px"
       className="grid-6 carouselWrapper centerColumn"
     >
       <div>
